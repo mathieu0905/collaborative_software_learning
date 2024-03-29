@@ -1,0 +1,18 @@
+python client.py \
+    --output_dir=../saved_models_client \
+    --model_type=t5 \
+    --config_name=Salesforce/codet5-base \
+    --model_name_or_path=Salesforce/codet5-base \
+    --tokenizer_name=Salesforce/codet5-base \
+    --do_train \
+    --train_data_dir=../dataset/split_jsonl_files \
+    --eval_data_file=../dataset/valid.jsonl \
+    --test_data_file=../dataset/test.jsonl \
+    --epoch 1 \
+    --block_size 400 \
+    --train_batch_size 32 \
+    --eval_batch_size 64 \
+    --learning_rate 2e-5 \
+    --max_grad_norm 1.0 \
+    --evaluate_during_training True\
+    --type project  2>&1 | tee train_project.log

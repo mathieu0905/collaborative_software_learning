@@ -1,0 +1,22 @@
+checkpoint_round=3
+python client.py \
+    --output_dir=./saved_models \
+    --model_type=t5 \
+    --config_name=Salesforce/codet5-base \
+    --model_name_or_path=Salesforce/codet5-base \
+    --tokenizer_name=Salesforce/codet5-base \
+    --do_train \
+    --train_data_dir=../dataset/split_jsonl_files \
+    --eval_data_file=../dataset/valid.jsonl \
+    --test_data_file=../dataset/test.jsonl \
+    --cache_dir=/data/model \
+    --epoch 1 \
+    --block_size 400 \
+    --train_batch_size 10 \
+    --eval_batch_size 64 \
+    --learning_rate 2e-5 \
+    --max_grad_norm 1.0 \
+    --checkpoint_round $checkpoint_round \
+    --load_model_path saved_models/model_round_$checkpoint_round.bin \
+    --evaluate_during_training True\
+    --type even  2>&1 | tee train.log
