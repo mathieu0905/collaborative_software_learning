@@ -2,9 +2,9 @@
 python client_uneven_nums.py \
     --output_dir=./saved_models_uneven_nums \
     --model_type=roberta \
-    --config_name=../../../model/codebert-base/config.json \
-    --model_name_or_path=../../../model/codebert-base \
-    --tokenizer_name=../../../model/codebert-base \
+    --config_name=microsoft/codebert-base \
+    --model_name_or_path=microsoft/codebert-base \
+    --tokenizer_name=microsoft/codebert-base \
     --train_data_dir=../../nums/split_uneven/ \
     --eval_data_file=../../dataset/valid.txt \
     --test_data_file=../../dataset/valid.txt\

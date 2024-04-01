@@ -1,9 +1,9 @@
 python run.py \
     --output_dir=../saved_models \
     --model_type=roberta \
-    --config_name=../../model/codebert-base/config.json \
-    --model_name_or_path=../../model/codebert-base \
-    --tokenizer_name=../../model/codebert-base \
+    --config_name=codebert-base \
+    --model_name_or_path=codebert-base \
+    --tokenizer_name=codebert-base \
     --cache_dir=/data/model \
     --do_train \
     --train_data_file=../dataset/split_jsonl_files/split_0.jsonl \

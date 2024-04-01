@@ -2,9 +2,9 @@
 python client.py \
     --output_dir=./saved_models \
     --model_type=roberta \
-    --config_name=../../../model/codebert-base/config.json \
-    --model_name_or_path=../../../model/codebert-base \
-    --tokenizer_name=../../../model/codebert-base \
+    --config_name=microsoft/codebert-base \
+    --model_name_or_path=microsoft/codebert-base \
+    --tokenizer_name=microsoft/codebert-base \
     --train_data_dir=../../tags/splits_even/ \
     --eval_data_file=../../dataset/valid.txt \
     --test_data_file=../../dataset/test.txt \

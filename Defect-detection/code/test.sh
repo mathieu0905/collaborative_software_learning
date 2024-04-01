@@ -1,8 +1,8 @@
 python run.py \
     --output_dir=./saved_models_1client \
     --model_type=roberta \
-    --tokenizer_name=../../model/codebert-base \
-    --model_name_or_path=../../model/codebert-base/ \
+    --tokenizer_name=codebert-base \
+    --model_name_or_path=codebert-base/ \
     --do_test \
     --train_data_file=../dataset/train.jsonl \
     --eval_data_file=../dataset/valid.jsonl \

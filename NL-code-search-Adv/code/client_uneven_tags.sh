@@ -1,9 +1,9 @@
 python client.py \
     --output_dir=./saved_models \
     --model_type=roberta \
-    --config_name=../../model/codebert-base/config.json \
-    --model_name_or_path=../../model/codebert-base \
-    --tokenizer_name=../../model/codebert-base \
+    --config_name=codebert-base \
+    --model_name_or_path=codebert-base \
+    --tokenizer_name=codebert-base \
     --do_train \
     --train_data_dir=../dataset/split_jsonl_files \
     --eval_data_file=../dataset/valid.jsonl \
@@ -14,5 +14,5 @@ python client.py \
     --eval_batch_size 64 \
     --learning_rate 2e-5 \
     --max_grad_norm 1.0 \
-    --evaluate_during_training True\
+    --evaluate_during_training True \
     --type even  2>&1 | tee train.log

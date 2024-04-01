@@ -114,7 +114,7 @@ class CustomFedAvg(fl.server.strategy.FedAvg):
         return aggregated_parameters, aggregated_metrics
     
 
-NUM_CLIENTS = 2
+NUM_CLIENTS = 10
 client_resources = {"num_cpus": 16, "num_gpus": 1.0}
 # client_fn(1)
 fl.simulation.start_simulation(

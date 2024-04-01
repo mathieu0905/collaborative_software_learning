@@ -9,7 +9,7 @@ output_dir=model/$lang
 train_dir=$data_dir/$lang/split_jsonl_files
 dev_file=$data_dir/$lang/valid.jsonl
 epochs=1
-pretrained_model=../../model/codebert-base #Roberta: roberta-base
+pretrained_model=codebert-base #Roberta: roberta-base
 
 python run.py 
     --do_train 

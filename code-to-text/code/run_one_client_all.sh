@@ -6,7 +6,7 @@ source_length=256
 target_length=128
 data_dir=../dataset
 epochs=10
-pretrained_model=../../model/codebert-base #Roberta: roberta-base
+pretrained_model=codebert-base #Roberta: roberta-base
 
 # Array of languages
 languages=("ruby" "javascript" "go" "python" "java" "php")

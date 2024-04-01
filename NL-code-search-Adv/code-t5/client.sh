@@ -18,5 +18,5 @@ python client.py \
     --max_grad_norm 1.0 \
     --checkpoint_round $checkpoint_round \
     --load_model_path saved_models/model_round_$checkpoint_round.bin \
-    --evaluate_during_training True\
+    --evaluate_during_training True \
     --type even  2>&1 | tee train.log

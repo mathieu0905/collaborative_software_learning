@@ -12,6 +12,10 @@ Given two codes as the input, the task is to do binary classification (0/1), whe
 
 The dataset we use is [BigCloneBench](https://www.cs.usask.ca/faculty/croy/papers/2014/SvajlenkoICSME2014BigERA.pdf) and filtered following the paper [Detecting Code Clones with Graph Neural Network and Flow-Augmented Abstract Syntax Tree](https://arxiv.org/pdf/2002.08653.pdf).
 
+### Split the dataset
+In this experiment, we will split the dataset into different parts with diffenrent stratagies.
+Change the NUM_CLIENTS in client.py
+
 ### Data Format
 
 1. dataset/data.jsonl is stored in jsonlines format. Each line in the uncompressed file represents one function.  One row is illustrated below.
@@ -101,9 +105,9 @@ cd code
 python run.py \
     --output_dir=./saved_models \
     --model_type=roberta \
-    --config_name=../../model/codebert-base/config.json \
-    --model_name_or_path=../../model/codebert-base \
-    --tokenizer_name=../../model/codebert-base \
+    --config_name=codebert-base \
+    --model_name_or_path=codebert-base \
+    --tokenizer_name=codebert-base \
     --do_eval \
     --do_test \
     --train_data_file=../dataset/train.txt \

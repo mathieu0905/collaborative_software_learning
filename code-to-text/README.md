@@ -13,6 +13,9 @@ The dataset we use comes from [CodeSearchNet](https://arxiv.org/pdf/1909.09436.p
 - Remove examples that documents contain special tokens (e.g. <img ...> or https:...)
 - Remove examples that documents are not English.
 
+### Federated Learning
+Please split the dataset first
+
 ### Download data and preprocess
 
 ```shell

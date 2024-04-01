@@ -15,5 +15,5 @@ python centralized.py \
     --eval_batch_size 64 \
     --learning_rate 2e-5 \
     --max_grad_norm 1.0 \
-    --evaluate_during_training True\
+    --evaluate_during_training True \
     --type even  2>&1 | tee train.log

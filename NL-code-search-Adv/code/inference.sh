@@ -1,9 +1,9 @@
 python inference.py \
     --output_dir=./saved_models_client1 \
     --model_type=roberta \
-    --config_name=../../model/codebert-base/config.json \
-    --model_name_or_path=../../model/codebert-base \
-    --tokenizer_name=../../model/codebert-base \
+    --config_name=codebert-base \
+    --model_name_or_path=codebert-base \
+    --tokenizer_name=codebert-base \
     --do_test \
     --train_data_file=../dataset/train.jsonl \
     --eval_data_file=../dataset/valid.jsonl \

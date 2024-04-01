@@ -7,7 +7,7 @@ beam_size=10
 source_length=256
 target_length=128
 data_dir=../dataset
-pretrained_model=../../model/codebert-base # Roberta: roberta-base
+pretrained_model=codebert-base # Roberta: roberta-base
 
 # Array of languages
 languages=("Ruby" "Javascript" "Go" "Python" "Java" "PHP")

@@ -20,7 +20,7 @@ for lang in "${languages[@]}"; do
     python run.py \
         --do_test \
         --model_type roberta \
-        --model_name_or_path ../../model/codebert-base \
+        --model_name_or_path codebert-base \
         --load_model_path $test_model \
         --dev_filename $dev_file \
         --test_filename $test_file \
