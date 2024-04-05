@@ -1,0 +1,18 @@
+python client_0.py \
+    --output_dir=../saved_models_client \
+    --model_type=roberta \
+    --config_name=codellama/CodeLlama-7b-hf \
+    --model_name_or_path=codellama/CodeLlama-7b-hf \
+    --tokenizer_name=codellama/CodeLlama-7b-hf \
+    --do_train \
+    --train_data_dir=../dataset/split_jsonl_files \
+    --eval_data_file=../dataset/valid.jsonl \
+    --test_data_file=../dataset/test.jsonl \
+    --epoch 1 \
+    --block_size 400 \
+    --train_batch_size 1 \
+    --eval_batch_size 1 \
+    --learning_rate 2e-5 \
+    --max_grad_norm 1.0 \
+    --evaluate_during_training True \
+    --type project 2>&1 | tee train_project.log

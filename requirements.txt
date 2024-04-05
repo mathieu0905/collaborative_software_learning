@@ -1,0 +1,11 @@
+flwr[simulation]
+flwr_datasets[vision]
+torch
+torchvision
+matplotlib
+scikit-learn
+transformers
+tqdm
+tensorboardX
+beam
+peft==0.5.0

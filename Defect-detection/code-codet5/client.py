@@ -1,6 +1,6 @@
 from collections import OrderedDict
 
-from centralized import load_data, load_model, train, evaluate, DEVICE, parse_args
+from cc_func import load_data, load_model, train, evaluate, DEVICE, parse_args
 from torch.utils.data import DataLoader
 
 import flwr as fl
